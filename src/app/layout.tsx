@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Footer } from "@/components/Footer";
 import { PwaRegister } from "@/components/PwaRegister";
 import "./globals.css";
 
@@ -39,7 +38,6 @@ export default function RootLayout({
       <body className="flex min-h-dvh flex-col bg-zinc-50 text-zinc-900 antialiased">
         <PwaRegister />
         <div className="flex flex-1 flex-col">{children}</div>
-        <Footer />
       </body>
     </html>
   );
